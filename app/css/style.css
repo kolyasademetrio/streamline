@@ -1336,11 +1336,6 @@ img.mfp-img {
 .header .headerBottom__menuItem {
   position: relative;
 }
-@media screen and (max-width: 1024px) {
-  .header .headerBottom__menuItem {
-    border-bottom: 1px solid rgba(142, 142, 142, 0.4);
-  }
-}
 .header .headerBottom__menuItem:hover .headerBottom__menuLink {
   background-color: #14131b;
   color: #fff;
@@ -1385,6 +1380,11 @@ img.mfp-img {
 }
 .header .headerBottom__menuItemNested:last-child {
   border-bottom: none;
+}
+@media screen and (max-width: 1024px) {
+  .header .headerBottom__menuItemNested:last-child {
+    border-bottom: 1px solid #8e8e8e;
+  }
 }
 .header .headerBottom__menuLinkNested {
   font-size: 16px;

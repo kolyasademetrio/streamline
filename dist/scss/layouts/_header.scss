@@ -93,7 +93,7 @@
       position: relative;
 
       @media screen and (max-width: $tablet-media) {
-        border-bottom: 1px solid rgba(142, 142, 142, 0.4);
+        // border-bottom: 1px solid rgba(142, 142, 142, 0.4);
       }
 
       &:hover {
@@ -149,6 +149,10 @@
 
       &:last-child {
         border-bottom: none;
+
+        @media screen and (max-width: $tablet-media) {
+          border-bottom: 1px solid #8e8e8e;
+        }
       }
     }
     &__menuLinkNested {
