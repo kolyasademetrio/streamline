@@ -1,0 +1,198 @@
+.footer {
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: $primary;
+}
+
+.footerTop {
+  padding: 92px 0 25px;
+
+  @media screen and (max-width: $tablet-media) {
+    padding-top: 62px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: flex-start;
+
+    @media screen and (max-width: $tablet-media) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__col {
+    margin-right: 60px;
+    padding-top: 18px;
+
+    @media screen and (max-width: $tablet-media) {
+      padding-top: 40px;
+    }
+
+    &:first-child {
+      max-width: 280px;
+      margin-right: 100px;
+      padding-top: 0;
+
+      @media screen and (max-width: $tablet-media) {
+        margin-right: 0;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: 50%;
+      margin-right: 0;
+      padding-right: 10px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 0;
+      width: 50%;
+      padding-right: 0;
+    }
+
+    &:last-child {
+      flex-grow: 1;
+      margin-right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media screen and (max-width: $tablet-media) {
+        max-width: 100%;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &__colInner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__menuTitle {
+    font-weight: 700;
+    font-size: 18px;
+    color: $white;
+    padding: 0 0 20px;
+
+    &.m-secondary {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__menuListItem {
+  }
+
+  &__menuLink {
+    color: $white;
+    font-weight: 400;
+    font-size: 16px;
+
+    &.m-secondary {
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+
+  &__logoWrap {
+    max-width: 270px;
+    padding: 0 0 15px;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 400;
+    color: $white;
+    padding: 0 0 40px;
+  }
+
+  &__socialsWrap {
+  }
+
+  &__colInner {
+  }
+
+  &__link {
+    &.m-tel {
+      font-size: 14px;
+      font-weight: 700;
+      color: $secondary;
+    }
+    &.m-email {
+      font-size: 12px;
+      font-weight: 600;
+      color: $white;
+    }
+  }
+
+  &__address {
+    address {
+      font-size: 12px;
+      font-weight: 400;
+      color: $white;
+      font-style: normal;
+    }
+  }
+
+  &__contactsList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 12px;
+  }
+
+  &__contactsListItem {
+  }
+
+  &__copy {
+    color: $white;
+    padding: 40px 0 0;
+    font-size: 10px;
+    font-weight: 400;
+
+    @media screen and (max-width: $tablet-media) {
+      display: none;
+    }
+
+    &.m-secondary {
+      display: none;
+      padding-top: 5px;
+
+      @media screen and (max-width: $tablet-media) {
+        display: block;
+      }
+    }
+  }
+
+  &__termsPrivacy {
+    margin-top: auto;
+
+    @media screen and (max-width: $tablet-media) {
+      padding-top: 40px;
+    }
+  }
+
+  &__termsPrivacy,
+  &__termsPrivacy a {
+    font-size: 12px;
+    font-weight: 700;
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+.footerBottom {
+  display: none;
+}
