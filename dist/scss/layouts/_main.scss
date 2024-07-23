@@ -1031,6 +1031,96 @@ img {
   }
 }
 
+.newslineGrid {
+  padding: 93px 0 100px;
+  background-color: $white;
+
+  @media screen and (max-width: $mobile-wide-media) {
+    padding: 40px 0 40px;
+  }
+
+  &__inner {
+  }
+
+  &__title {
+    padding-bottom: 40px;
+    text-align: center;
+    color: $primary;
+  }
+
+  &__grid {
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  &__gridItem {
+    padding: 0 10px;
+    cursor: pointer;
+    width: 25%;
+    max-width: 25%;
+
+    @media screen and (max-width: $tablet-media) {
+      width: 33.33333333%;
+      max-width: 33.33333333%;
+    }
+
+    @media screen and (max-width: $mobile-wide-media) {
+      width: 50%;
+      max-width: 50%;
+    }
+
+    @media screen and (max-width: $mobile-media) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__gridItemInner {
+  }
+
+  &__gridItemImgWrap {
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__gridItemImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__gridItemTitle {
+    padding: 0 0 10px;
+    font-weight: 700;
+    font-size: 22px;
+    color: $primary;
+  }
+
+  &__gridItemTextContent {
+    padding: 0 0 20px;
+  }
+
+  &__gridItemText {
+    font-weight: 400;
+    font-size: 14px;
+    color: $primary;
+  }
+
+  &__gridItemBtnWrap {
+  }
+
+  &__gridItemButton {
+  }
+}
+
 .map {
   background-color: $black;
   padding: 80px 0 80px;
