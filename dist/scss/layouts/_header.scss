@@ -58,7 +58,8 @@
     }
 
     &__menuWrap {
-      display: flex;
+      // display: flex;
+      display: none;
       align-items: center;
 
       @media screen and (max-width: $tablet-media) {

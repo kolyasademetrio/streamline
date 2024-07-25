@@ -1295,9 +1295,7 @@ img.mfp-img {
   max-width: 100%;
 }
 .header .headerBottom__menuWrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1516,6 +1514,11 @@ img.mfp-img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: auto;
+  width: auto;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 }
 @media screen and (max-width: 1024px) {
   .footerTop__col:last-child {
@@ -1575,7 +1578,6 @@ img.mfp-img {
   font-size: 12px;
   font-weight: 400;
   color: #fff;
-  padding: 0 0 40px;
 }
 .footerTop__link.m-tel {
   font-size: 14px;
