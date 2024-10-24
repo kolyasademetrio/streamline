@@ -10,7 +10,6 @@ $(window).on("load", function () {
 /* viewport width */
 $(function () {
   const menu = document.querySelector(".js-menu");
-  // const menuBtnClose = document.querySelector(".js-menu-btn-close");
   const menuBtnOpen = document.querySelector(".js-menu-btn-open");
   const menuOverlay = document.querySelector(".js-menu-overlay");
 
@@ -19,17 +18,73 @@ $(function () {
       menu.classList.add("m-active");
       menuOverlay.classList.add("m-active");
       document.body.classList.add("menu-open");
-      // menu.classList.remove("m-slidein");
     });
-    // menuBtnClose.addEventListener("click", () => {
-    //   menu.classList.remove("m-active");
-    //   menu.classList.add("m-slidein");
-    // });
+
     menuOverlay.addEventListener("click", () => {
       menu.classList.remove("m-active");
       menuOverlay.classList.remove("m-active");
       document.body.classList.remove("menu-open");
-      // menu.classList.add("m-slidein");
+    });
+  }
+
+  const formModal = document.querySelector(".js-form-modal");
+  const formModalBtnClose = document.querySelector(".js-form-btn-close");
+  const formModalBtnOpen = document.querySelectorAll(".js-form-btn-open");
+  const formModalOverlay = document.querySelector(".js-form-overlay");
+
+  const openModal = () => {
+    formModal.classList.add("m-active");
+    document.body.classList.add("menu-open");
+  };
+
+  const closeModal = () => {
+    formModal.classList.remove("m-active");
+    document.body.classList.remove("menu-open");
+  };
+
+  if (
+    formModal &&
+    formModalBtnClose &&
+    formModalBtnOpen &&
+    formModalBtnOpen.length &&
+    formModalOverlay
+  ) {
+    formModalBtnOpen.forEach((el) => {
+      el.addEventListener("click", () => {
+        openModal();
+      });
+    });
+
+    formModalBtnClose.addEventListener("click", () => {
+      closeModal();
+    });
+    formModalOverlay.addEventListener("click", () => {
+      closeModal();
+    });
+  }
+
+  const openSentConfirmModal = () => {
+    sentConfirmModal.classList.add("m-active");
+    document.body.classList.add("menu-open");
+  };
+
+  const closeSentConfirmModal = () => {
+    sentConfirmModal.classList.remove("m-active");
+    document.body.classList.remove("menu-open");
+  };
+
+  const sentConfirmModal = document.querySelector(".js-sent-confirm-modal");
+  const sentConfirmBtnClose = document.querySelector(
+    ".js-sent-confirm-btn-close"
+  );
+  const sentConfirmOverlay = document.querySelector(".js-sent-confirm-overlay");
+
+  if (sentConfirmModal && sentConfirmBtnClose && sentConfirmOverlay) {
+    sentConfirmBtnClose.addEventListener("click", () => {
+      closeSentConfirmModal();
+    });
+    sentConfirmOverlay.addEventListener("click", () => {
+      closeSentConfirmModal();
     });
   }
 

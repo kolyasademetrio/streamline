@@ -3,10 +3,10 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-	<title>Главная</title>
-	<meta name='description' content="" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
+	<title>Streamline</title>
+	<meta name="description" content="Streamline Delivering Exellence" />
 	<meta name="keywords" content="" />
 	<link rel="icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -21,7 +21,7 @@
 					<div class="headerBottom__inner">
 						<div class="headerBottom__logoWrap">
 							<a href="/" class="headerBottom__logoLink">
-								<img src="images/logo.png" alt="EDUCAT24 logo" class="headerBottom__logoImg" />
+								<img src="images/logo.png" alt="Streamline logo" class="headerBottom__logoImg" />
 							</a>
 						</div>
 						<div class="headerBottom__menuWrap js-menu">
@@ -29,32 +29,38 @@
 								<ul class="headerBottom__menuList">
 									<li class="headerBottom__menuItem">
 										<a href="/" class="headerBottom__menuLink">About us</a>
-										<ul class="headerBottom__menuListNested">
-											<li class="headerBottom__menuItemNested">
-												<a href="/" class="headerBottom__menuLinkNested">Mission and values</a>
-											</li>
-											<li class="headerBottom__menuItemNested">
-												<a href="/" class="headerBottom__menuLinkNested">Safety</a>
-											</li>
-											<li class="headerBottom__menuItemNested">
-												<a href="/" class="headerBottom__menuLinkNested">Our team</a>
-											</li>
-											<li class="headerBottom__menuItemNested">
-												<a href="/" class="headerBottom__menuLinkNested">Projects</a>
-											</li>
-										</ul>
+										<!-- <ul class="headerBottom__menuListNested">
+                  <li class="headerBottom__menuItemNested">
+                    <a href="/" class="headerBottom__menuLinkNested"
+                      >Mission and values</a
+                    >
+                  </li>
+                  <li class="headerBottom__menuItemNested">
+                    <a href="/" class="headerBottom__menuLinkNested">Safety</a>
+                  </li>
+                  <li class="headerBottom__menuItemNested">
+                    <a href="/" class="headerBottom__menuLinkNested"
+                      >Our team</a
+                    >
+                  </li>
+                  <li class="headerBottom__menuItemNested">
+                    <a href="/" class="headerBottom__menuLinkNested"
+                      >Projects</a
+                    >
+                  </li>
+                </ul> -->
 									</li>
 									<li class="headerBottom__menuItem">
 										<a href="/" class="headerBottom__menuLink">Services</a>
 									</li>
 									<li class="headerBottom__menuItem">
+										<a href="/" class="headerBottom__menuLink">Rural ISPs</a>
+									</li>
+									<li class="headerBottom__menuItem">
 										<a href="/" class="headerBottom__menuLink">Join the team</a>
 									</li>
 									<li class="headerBottom__menuItem">
-										<a href="/" class="headerBottom__menuLink">Become a partner</a>
-									</li>
-									<li class="headerBottom__menuItem">
-										<a href="/" class="headerBottom__menuLink">Newsroom</a>
+										<a href="/" class="headerBottom__menuLink">Contact us</a>
 									</li>
 								</ul>
 							</nav>
@@ -64,6 +70,58 @@
 							<button class="headerBottom__hamburger js-menu-btn-open" aria-label="Open menu button">
 								<span class="headerBottom__hamburgerLine"></span><span class="headerBottom__hamburgerLine"></span><span class="headerBottom__hamburgerLine"></span>
 							</button>
+						</div>
+						<div class="headerBottom__formModal modal js-form-modal">
+							<div class="headerBottom__formModalWrapper modal__wrapper">
+								<button class="headerBottom__formModalClose modal__close js-form-btn-close">
+									&times;
+								</button>
+								<div class="headerBottom__formModalInner modal__inner">
+									<h4 class="headerBottom__formTitle modal__title">
+										<span class="color-white">Contact us</span> for discussing your
+										project or any questions
+									</h4>
+									<form action="" class="headerBottom__form">
+										<div class="headerBottom__formModalFieldWrap">
+											<input name="name" type="text" class="headerBottom__formModalField" placeholder="Name" />
+										</div>
+										<div class="headerBottom__formModalFieldWrap">
+											<input name="phone" type="text" class="headerBottom__formModalField" placeholder="Phone" />
+										</div>
+										<div class="headerBottom__formModalFieldWrap">
+											<input name="email" type="text" class="headerBottom__formModalField" placeholder="E-mail" />
+										</div>
+										<div class="headerBottom__formModalBtnWrap">
+											<button type="button" class="headerBottom__formModalFieldButton btn btn-sixth">
+												Send
+											</button>
+										</div>
+										<div class="headerBottom__formModalMessage">
+											Thank you for your message. It has been sent
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="headerBottom__formModalOverlay modal__overlay js-form-overlay"></div>
+						</div>
+						<div class="modal js-sent-confirm-modal">
+							<div class="modal__wrapper">
+								<button class="modal__close js-sent-confirm-btn-close">
+									&times;
+								</button>
+								<div class="modal__inner">
+									<h4 class="modal__title centered">
+										<span class="color-white">Thank you</span> for your message.
+										<br />It has been sent.
+									</h4>
+									<div class="modal__footer">
+										<button type="button" class="modal__btnClose btn btn-sixth">
+											Close
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="modal__overlay js-sent-confirm-overlay"></div>
 						</div>
 					</div>
 				</div>
@@ -79,7 +137,9 @@
 							</h1>
 							<p class="hero__text"><br /><br /></p>
 							<div class="hero__btnWrap">
-								<a href="/" class="hero__btn btn">Contact us</a>
+								<button type="button" class="hero__btn btn js-form-btn-open">
+									Contact us
+								</button>
 							</div>
 						</div>
 					</div>
@@ -99,9 +159,9 @@
 								to the telecommunications and utility industries, delivering
 								comprehensive, turnkey solutions tailored to our clients' needs.
 							</p>
-							<!-- <div class="aboutus__btnWrap">
-          <a href="/" class="aboutus__btn btn btn-secondary">More ></a>
-        </div> -->
+							<div class="aboutus__btnWrap">
+								<a href="/" class="aboutus__btn btn btn-secondary">More ></a>
+							</div>
 						</div>
 						<div class="aboutus__innerItem m-secondary">
 							<div class="aboutus__imgWrap">
@@ -156,9 +216,9 @@
 									</p>
 								</li>
 							</ul>
-							<!-- <div class="ourexpertise__btnWrap">
-          <a href="/" class="ourexpertise__btn btn btn-secondary">More ></a>
-        </div> -->
+							<div class="ourexpertise__btnWrap">
+								<a href="/" class="ourexpertise__btn btn btn-secondary">More ></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -538,7 +598,9 @@
 								<div class="formCol__colHeader">
 									<div class="formCol__colHeaderTitle">or fill the form</div>
 									<div class="formCol__colHeaderBtnWrap">
-										<a href="" class="formCol__colHeaderBtn btn btn-fifth">Use The Form</a>
+										<button class="formCol__colHeaderBtn btn btn-fifth js-form-btn-open" type="button">
+											Use The Form
+										</button>
 									</div>
 								</div>
 							</div>
@@ -554,7 +616,7 @@
 					<div class="footerTop__inner">
 						<div class="footerTop__col">
 							<div class="footerTop__logoWrap">
-								<img src="images/logo2.png" alt="Steamline Logo" />
+								<img src="images/logo2.png" alt="Streamline logo" />
 							</div>
 							<div class="footerTop__text">
 								<!-- Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
